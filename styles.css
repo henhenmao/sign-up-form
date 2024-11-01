@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+}
+
 body {
     width: 100vw;
     height: 100vh;
@@ -51,9 +56,54 @@ body {
     width: 65vw;
     height: 100vh;
     flex-direction: column;
-    margin-left: 2%;
 }
 
-.input {
-    font-size: 5vh;
+.header {
+    margin: 0 5%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.input-section {
+    padding: 5%;
+    border-top: 1px solid #d3d3d3;
+    border-bottom: 1px solid #d3d3d3;
+    box-shadow: 0 10px 10px -10px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: row;
+    gap: 6%;
+    margin-top: 3vh;
+}
+
+input {
+    font-size: 2vh;
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    border-color: #E5E7EB;
+}
+
+input:hover {
+    border-color:black;
+}
+
+input:focus {
+    border-color: blue;
+}
+
+input[type="password"]:invalid {
+    border-color: red;
+}
+
+.submit-form {
+    margin: 4% 5%;
+    width: 25%;
+    height: 10%;
+    border-radius: 0.5em;
+    background-color: #596D48;
+    color: white;
+    border: none;
 }
