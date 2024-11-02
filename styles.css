@@ -86,12 +86,14 @@ input {
     border-color: #E5E7EB;
 }
 
-input:hover {
-    border-color:black;
+input:focus {
+    outline: none;
+    box-shadow: 0 2px 2px 2px gray;
+    border-color: lightblue;
 }
 
-input:focus {
-    border-color: blue;
+input:valid {
+    border-color: #E5E7EB;
 }
 
 input[type="password"]:invalid {
@@ -99,11 +101,24 @@ input[type="password"]:invalid {
 }
 
 .submit-form {
-    margin: 4% 5%;
+    margin: 0 5%;
+    margin-top: 3%;
     width: 25%;
     height: 10%;
     border-radius: 0.5em;
     background-color: #596D48;
     color: white;
     border: none;
+}
+
+.log-in {
+    margin: 5%;
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+}
+
+.log-in-button, .log-in-button:visited {
+    color: #596D48;
+    text-decoration: none;
 }
