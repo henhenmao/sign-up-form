@@ -1,5 +1,1 @@
-Odin Project Sign-up Form
-Working with:
-- backgrounds
-- forms and inputs
-- buttons
+This is a sign-up form webpage made with HTML and CSS  
